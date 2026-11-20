@@ -163,8 +163,3 @@ Figures go to `out/figs/` as `.pdf` and `.png`, and tables go to `out/tables/` a
 - OMA and VEO are normalized to the input power and signed. A negative OMA means the levels are inverted. A ring is invalid when its VEO is below zero.
 - The metrics are taken at the center sample of every symbol. The BER is 0.5 erfc(Q_f/sqrt 2), with the receiver noise floor added in quadrature to the spread of each level.
 - The solver splits a step into substeps when |detuning| x step would exceed 2.4. A single 1 ps step is unstable there, which happens at the start of the ramp at Q = 3000 and for far-detuned as-fabricated rings. Everywhere else it takes one step.
-
-## References
-
-- M. Giron Castro et al., 2024, nonlinear microring model (TPA, free carriers, self-heating).
-- M. de Cea et al., 2019, voltage-driven silicon microring modulator.
